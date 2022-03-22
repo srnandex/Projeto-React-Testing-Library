@@ -38,7 +38,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 # Habilidades
 
-Neste projeto, verificamos se voce é capaz de:
+Neste projeto, verificamos se voce é capaz de
 
 * Utilizar os seletores (queries) da React-Testing-Library em testes automatizados.
 

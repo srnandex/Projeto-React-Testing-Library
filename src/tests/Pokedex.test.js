@@ -13,7 +13,7 @@ describe('5. Teste o componente <Pokedex.js />', () => {
     expect(notPokemon).toBeInTheDocument();
   });
 
-  it('Teste se página contém um h2 com o texto Encountered pokémons.', async () => {
+  it('Teste se a Pokédex contém um botão para resetar o filtro.', async () => {
     const btnAll = screen.getByRole('button', { name: 'All' });
     expect(btnAll).toBeDefined();
 
@@ -23,7 +23,7 @@ describe('5. Teste o componente <Pokedex.js />', () => {
     expect(nameFirstPokemonAll).toBeInTheDocument();
   });
 
-  it('Teste se página contém um h2 com o texto Encountered pokémons.', async () => {
+  it('Teste próximo Pokémon da lista quando o botão Próximo é clicado.', async () => {
     const nameFirstPokemon = screen.getByText('Pikachu');
     expect(nameFirstPokemon).toBeInTheDocument();
 
@@ -36,7 +36,7 @@ describe('5. Teste o componente <Pokedex.js />', () => {
     expect(nameSecondPokemon).toBeInTheDocument();
   });
 
-  it('Teste se página contém um heading h2 com o texto Encountered pokémons.', () => {
+  it('Teste se a Pokédex tem os botões de filtro.', () => {
     const magicNumber = 7;
     const testId = screen.getAllByTestId('pokemon-type-button');
     expect(testId.length).toEqual(magicNumber);
